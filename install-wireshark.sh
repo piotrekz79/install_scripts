@@ -10,6 +10,9 @@ sudo apt-get install wireshark -y
 #normally non-root cannot sniff, this is a fix (agree)
 sudo dpkg-reconfigure wireshark-common
 
+echo "==========================="
 sudo adduser $USER wireshark 
+echo "==========================="
+echo "==========================="
 echo "logoff/logon may be needed"
 
