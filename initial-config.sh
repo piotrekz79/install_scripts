@@ -5,7 +5,7 @@
 sudo apt-get install openssh-server -y
 
 #keys
-ssh-keygen -f /home/coco/.ssh/id_rsa -N ""
+ssh-keygen -f /home/${USER}/.ssh/id_rsa -N ""
 cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 
