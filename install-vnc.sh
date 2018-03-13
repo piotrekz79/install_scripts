@@ -1,9 +1,12 @@
 #!/bin/bash
 # installs lubuntu desktop and configures remote access via tigervnc
+
+DEBFILE=tigervncserver_1.8.0-1ubuntu1_amd64.deb
+
 mkdir ~/Downloads
 cd ~/Downloads
 
-wget https://bintray.com/artifact/download/tigervnc/stable/ubuntu-16.04LTS/amd64/tigervncserver_1.7.0-1ubuntu1_amd64.deb
+wget https://bintray.com/artifact/download/tigervnc/stable/ubuntu-16.04LTS/amd64/${DEBFILE}
 
 #gdebi installs with dependeces
 #alternative is to use 
@@ -11,7 +14,7 @@ wget https://bintray.com/artifact/download/tigervnc/stable/ubuntu-16.04LTS/amd64
 #sudo apt-get -f install
 #dpkg -i mypak.deb
 
-sudo gdebi -n tigervncserver_1.7.0-1ubuntu1_amd64.deb
+sudo gdebi -n ${DEBFILE}
 
 tigervncserver
 #password setup needed
