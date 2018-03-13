@@ -16,6 +16,8 @@ wget https://bintray.com/artifact/download/tigervnc/stable/ubuntu-16.04LTS/amd64
 
 sudo gdebi -n ${DEBFILE}
 
+touch ~/.Xresources
+
 tigervncserver
 #password setup needed
 
