@@ -1,7 +1,7 @@
 #!/bin/bash
-# installs lubuntu desktop and configures remote access via tigervnc
+# assumes installed lubuntu desktop and configures remote access via tigervnc
 
-DEBFILE=tigervncserver_1.8.0-1ubuntu1_amd64.deb
+DEBFILE=tigervncserver_1.9.0-1ubuntu1_amd64.deb
 
 mkdir ~/Downloads
 cd ~/Downloads
